@@ -1,0 +1,232 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$YZ4ovG36sK5R4YIzaYGZMc$HEr7wo00cz/n2coieFRDWHltH5vsvCCszGOmpR37xHc=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-19T09:46:00.388Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "catalog.author",
+  "pk": 1,
+  "fields": {
+    "name": "Stephen King",
+    "age": 75
+  }
+},
+{
+  "model": "catalog.author",
+  "pk": 2,
+  "fields": {
+    "name": "J. R. R. Tolkien",
+    "age": 81
+  }
+},
+{
+  "model": "catalog.author",
+  "pk": 3,
+  "fields": {
+    "name": "Erich Maria Remarque",
+    "age": 72
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 1,
+  "fields": {
+    "name": "HarperCollins"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 2,
+  "fields": {
+    "name": "D. Appleton Century"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 3,
+  "fields": {
+    "name": "Ballantine Books"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 4,
+  "fields": {
+    "name": "Kiepenheuer & Witsch GmbH"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 5,
+  "fields": {
+    "name": "Scribner"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 6,
+  "fields": {
+    "name": "Heyne Verlag"
+  }
+},
+{
+  "model": "catalog.publisher",
+  "pk": 7,
+  "fields": {
+    "name": "Bastei Lubbe"
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 1,
+  "fields": {
+    "name": "The Mist",
+    "pages": 176,
+    "price": "8.77",
+    "rating": 4.6,
+    "publisher": 5,
+    "pubdate": "2018-06-05",
+    "authors": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 2,
+  "fields": {
+    "name": "It",
+    "pages": 1537,
+    "price": "17.00",
+    "rating": 4.6,
+    "publisher": 6,
+    "pubdate": "2011-02-18",
+    "authors": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 3,
+  "fields": {
+    "name": "Shining",
+    "pages": 625,
+    "price": "9.99",
+    "rating": 4.4,
+    "publisher": 7,
+    "pubdate": "2013-10-25",
+    "authors": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 4,
+  "fields": {
+    "name": "Lord of the rings:The Hobbit",
+    "pages": 316,
+    "price": "9.99",
+    "rating": 5.0,
+    "publisher": 4,
+    "pubdate": "1973-10-01",
+    "authors": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 5,
+  "fields": {
+    "name": "All Quiet on the Western Front",
+    "pages": 264,
+    "price": "9.99",
+    "rating": 5.0,
+    "publisher": 3,
+    "pubdate": "1929-01-01",
+    "authors": [
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 6,
+  "fields": {
+    "name": "Arch of Triumph",
+    "pages": 455,
+    "price": "17.99",
+    "rating": 4.3,
+    "publisher": 1,
+    "pubdate": "1945-06-01",
+    "authors": [
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.book",
+  "pk": 7,
+  "fields": {
+    "name": "Drei Kameraden",
+    "pages": 455,
+    "price": "7.79",
+    "rating": 4.3,
+    "publisher": 2,
+    "pubdate": "1957-01-01",
+    "authors": [
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.store",
+  "pk": 1,
+  "fields": {
+    "name": "Amazon",
+    "books": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.store",
+  "pk": 2,
+  "fields": {
+    "name": "Thalia",
+    "books": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.store",
+  "pk": 3,
+  "fields": {
+    "name": "Thriftbooks",
+    "books": [
+      5,
+      6,
+      7
+    ]
+  }
+}
+]

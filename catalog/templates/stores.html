@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stores</title>
+</head>
+<body>
+    <h6><a href="{% url 'catalog:index' %}">HOME PAGE</a></h6>
+    <h1> STORES </h1>
+    {% for list in data %}
+        <hr>
+    <strong> <a href="/catalog/store/{{ list.id }}/"> {{list.name}} </a></strong>
+        {% for list in books %}
+            <p> {{list.name}}</p>
+        {% endfor %}
+        <p> {{list.book}}</p>
+    {% endfor %}
+    <hr>
+
+</body>
+</html>
