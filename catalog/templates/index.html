@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <H2>HOME PAGE</H2>
+    <h5><a href="{% url 'catalog:authors' %}">Authors: </a>{{ num_authors }}</h5>
+    <h5><a href="{% url 'catalog:books' %}">Books: </a>{{ num_books }}</h5>
+    <h6> average books rating : {{ rating_middle }}</h6>
+    <h5><a href="{% url 'catalog:publishers' %}">Publisher: </a>{{ num_publishers }}</h5>
+    <h5><a href="{% url 'catalog:stores' %}">Stores: </a>{{ num_stores }}</h5>
+
+
+</body>
+</html>

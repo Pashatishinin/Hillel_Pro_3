@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTHOR PROFILE</title>
+</head>
+<body>
+    <h6>
+        <a href="{% url 'catalog:index' %}" >HOME PAGE</a>
+        <a href="{% url 'catalog:authors' %}" >AUTHORS</a>
+        <a href="{% url 'catalog:books' %}" >BOOKS</a>
+        <a href="{% url 'catalog:publishers' %}" >PUBLISHERS</a>
+        <a href="{% url 'catalog:stores' %}" >STORES</a>
+    </h6>
+    <hr>
+    <strong>  AUTHOR PROFILE</strong>
+    <hr>
+    {% for list in data %}
+        <h3> {{list.name}} </h3>
+        <h4> this author have {{book_counter}} books</h4>
+        <em>  {{list.age}} years old</em>
+    {% endfor %}
+    <hr>
+    <strong> BOOK LIST </strong>
+    <hr>
+    {% for list in book_list %}
+        <h4> {{list.name}} </h4>
+    {% endfor %}
+</body>
+</html>
